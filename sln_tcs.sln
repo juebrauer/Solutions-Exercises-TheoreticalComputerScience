@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "knapsack", "knapsack\knapsack.vcxproj", "{FB9726A4-594F-4982-A8AE-C2AA3806A896}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regular_expressions", "regular_expressions\regular_expressions.vcxproj", "{94720B26-9AFE-4023-9194-BFA38FB6F896}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{FB9726A4-594F-4982-A8AE-C2AA3806A896}.Release|x64.Build.0 = Release|x64
 		{FB9726A4-594F-4982-A8AE-C2AA3806A896}.Release|x86.ActiveCfg = Release|Win32
 		{FB9726A4-594F-4982-A8AE-C2AA3806A896}.Release|x86.Build.0 = Release|Win32
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Debug|x64.ActiveCfg = Debug|x64
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Debug|x64.Build.0 = Debug|x64
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Debug|x86.ActiveCfg = Debug|Win32
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Debug|x86.Build.0 = Debug|Win32
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Release|x64.ActiveCfg = Release|x64
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Release|x64.Build.0 = Release|x64
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Release|x86.ActiveCfg = Release|Win32
+		{94720B26-9AFE-4023-9194-BFA38FB6F896}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
