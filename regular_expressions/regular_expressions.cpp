@@ -7,13 +7,15 @@ using namespace std;
 
 void test(regex expr)
 {
-   string input;
-   cin >> input;
-   if (regex_match(input, expr))
-      cout << "Input ok!" << endl;
-   else
-      cout << "Input wrong!" << endl;
-   cout << endl;
+   string input;   
+
+   do
+   {
+      cout << "Input: ";
+      cin >> input;         
+   } while (regex_match(input, expr) == false);
+
+   cout << "Input ok!" << endl;
 }
 
 
@@ -45,37 +47,34 @@ int main()
    }
 
    string input;
-   while (false)
+   while (true)
    {    
       regex r3("[[:digit:]]");
-      cout << "1. Please enter a single digit, e.g. 5" << endl;
+      cout << "\n1. Please enter a single digit, e.g. 5" << endl;
       test(r3);
       
       regex r4("[[:digit:]]+");
-      cout << "2. Please enter a single or multiple digits (without a sign), e.g. 559" << endl;
+      cout << "\n2. Please enter a single or multiple digits (without a sign), e.g. 559" << endl;
       test(r4);
 
       regex r5("-?[[:digit:]]+");
-      cout << "3. Please enter a single or multiple digits (with or without a minus sign -), e.g. -559" << endl;
+      cout << "\n3. Please enter a single or multiple digits (with or without a minus sign -), e.g. -559" << endl;
       test(r5);
 
       regex r6("\\+?[[:digit:]]+");
-      cout << "4. Please enter a single or multiple digits (with or without a plus sign +), e.g. +559" << endl;
+      cout << "\n4. Please enter a single or multiple digits (with or without a plus sign +), e.g. +559" << endl;
       test(r6);
 
       regex r7("(\\+|-)?[[:digit:]]+");
-      cout << "4. Please enter a single or multiple digits (with or without a minus - or plus sign +), e.g. -903" << endl;
+      cout << "\n5. Please enter a single or multiple digits (with or without a minus - or plus sign +), e.g. -903" << endl;
       test(r7);
 
       regex r8("((\\+|-)?[[:digit:]]+)(\\.(([[:digit:]]+)?))?");
-      cout << "5. Please enter a real number (with or without a minus - or plus sign +), e.g. -3.14159" << endl;
+      cout << "\n6. Please enter a real number (with or without a minus - or plus sign +), e.g. -3.14159" << endl;
       test(r8);
-   }
 
-   while (true)
-   {
       regex r9("[[:alnum:]]+([[:alnum:]]|\\.)*@[[:alnum:]]+\\.[[:alnum:]]+");
-      cout << "Enter an email address:" << endl;
+      cout << "\n7.Enter an email address:" << endl;
       test(r9);
    }
 
