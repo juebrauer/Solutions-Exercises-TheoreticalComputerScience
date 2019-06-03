@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <windows.h>
 
-#define N 99
+#define N 14
 
 void set_cursor(int x, int y)
 {
